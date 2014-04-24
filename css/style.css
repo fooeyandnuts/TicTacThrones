@@ -1,0 +1,38 @@
+body {
+    background-image:  url(../img/ironthrone.jpg);
+    background-size:   cover;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+	max-width: 504px;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 360px;
+
+}
+/*.houses {
+	max-width: 320px;
+	float: left;
+	height: auto;
+}*/
+
+.cells {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	color: white;
+	float: left;
+	margin: 5px;
+	border: 4px solid white;
+}
+.lannister {
+	background-image:url("");
+}
+.stark {
+	background-image:url("");
+}
+.row{clear:both;}
