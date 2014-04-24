@@ -10,13 +10,13 @@ gameApp.controller('GameController', function($scope){
      $scope.clicker = function (cellIndex){
           if ($scope.board[cellIndex] === " "){
                if (counter % 2 === 0){
-                         $scope.board[cellIndex]= "player1";
+                         $scope.board[cellIndex]= "Stark";
                          // player = "house1";
                          console.log($scope.board[cellIndex]);
                     }
 
                else {
-                    $scope.board[cellIndex]= "player2";
+                    $scope.board[cellIndex]= "Lannister";
                     // player = "house2";
                     console.log($scope.board[cellIndex]);
                     }
@@ -27,53 +27,54 @@ gameApp.controller('GameController', function($scope){
           $scope.winFunction();
           };
      $scope.winFunction = function (){
-          if (($scope.board[0]==="player1") && ($scope.board[1]==="player1") && ($scope.board[2]=="player1")){
-               console.log("player 1 wins");
+          if (($scope.board[0]==="Stark") && ($scope.board[1]==="Stark") && ($scope.board[2]=="Stark")){
+               console.log("Stark wins");
+               return;
                }
-          else if (($scope.board[3]==="player1") && ($scope.board[4]==="player1") && ($scope.board[5]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[3]==="Stark") && ($scope.board[4]==="Stark") && ($scope.board[5]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[6]==="player1") && ($scope.board[7]==="player1") && ($scope.board[8]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[6]==="Stark") && ($scope.board[7]==="Stark") && ($scope.board[8]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[0]==="player1") && ($scope.board[3]==="player1") && ($scope.board[6]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[0]==="Stark") && ($scope.board[3]==="Stark") && ($scope.board[6]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[1]==="player1") && ($scope.board[4]==="player1") && ($scope.board[7]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[1]==="Stark") && ($scope.board[4]==="Stark") && ($scope.board[7]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[2]==="player1") && ($scope.board[5]==="player1") && ($scope.board[8]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[2]==="Stark") && ($scope.board[5]==="Stark") && ($scope.board[8]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[0]==="player1") && ($scope.board[4]==="player1") && ($scope.board[8]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[0]==="Stark") && ($scope.board[4]==="Stark") && ($scope.board[8]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[2]==="player1") && ($scope.board[4]==="player1") && ($scope.board[6]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[2]==="Stark") && ($scope.board[4]==="Stark") && ($scope.board[6]=="Stark")){
+               console.log("Stark wins");
           }
-          else if (($scope.board[0]==="player2") && ($scope.board[1]==="player2") && ($scope.board[2]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[0]==="Lannister") && ($scope.board[1]==="Lannister") && ($scope.board[2]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[3]==="player2") && ($scope.board[4]==="player2") && ($scope.board[5]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[3]==="Lannister") && ($scope.board[4]==="Lannister") && ($scope.board[5]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[6]==="player2") && ($scope.board[7]==="player2") && ($scope.board[8]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[6]==="Lannister") && ($scope.board[7]==="Lannister") && ($scope.board[8]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[0]==="player2") && ($scope.board[3]==="player2") && ($scope.board[6]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[0]==="Lannister") && ($scope.board[3]==="Lannister") && ($scope.board[6]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[1]==="player1") && ($scope.board[4]==="player1") && ($scope.board[7]=="player1")){
-               console.log("player 1 wins");
+          else if (($scope.board[1]==="Lannister") && ($scope.board[4]==="Lannister") && ($scope.board[7]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[2]==="player2") && ($scope.board[5]==="player2") && ($scope.board[8]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[2]==="Lannister") && ($scope.board[5]==="Lannister") && ($scope.board[8]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if (($scope.board[0]==="player2") && ($scope.board[5]==="player2") && ($scope.board[8]=="player2")){
-               console.log("player 2 wins");
+          else if (($scope.board[0]==="Lannister") && ($scope.board[5]==="Lannister") && ($scope.board[8]=="Lannister")){
+               console.log("Lannister wins");
           }
-          else if(($scope.board[2]==="player2") && ($scope.board[5]==="player2") && ($scope.board[6]=="player2")){
-               console.log("player 2 wins");
+          else if(($scope.board[2]==="Lannister") && ($scope.board[5]==="Lannister") && ($scope.board[6]=="Lannister")){
+               console.log("Lannister wins");
           }
      };
      //STOP THE MADNESS!!
