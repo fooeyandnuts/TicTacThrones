@@ -14,6 +14,8 @@
 <body x-ng-app="gameApp" x-ng-controller="GameController">
 	<h1>Tic Tac Thrones</h1>
 
+	<h2 x-ng-click="gameReset">Renew Battle!<h2>
+
 	<div class="container">
 		<div class="cells" x-ng-repeat="b in game.board track by $index" x-ng-click="clicker($index)" x-ng-class="{stark: b =='Stark', lannister: b== 'Lannister'}">{{ b }}
 		</div>
