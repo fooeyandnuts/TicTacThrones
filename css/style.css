@@ -4,14 +4,20 @@ body {
     background-repeat: no-repeat;
 }
 
+h1 {
+	font-family: Cardo;
+	color: white;
+	text-align: center;
+	font-size: 100px;
+}
 
 .container {
+	position: absolute;
 	max-width: 498px;
 	float: left;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 50px;
-	margin-left: 360px;
+	top:50%;
+    left:50%;
+    margin:-30px 0 0 -249px;
 
 }
 /*.houses {
@@ -32,10 +38,12 @@ body {
 .lannister {
 	background-image:url(../img/lannister-small.jpg);
 	background-size: contain;
+	font-size: 0;
 }
 .stark {
 	background-image:url(../img/stark-small.jpg);
 	background-size: contain;
+	font-size: 0;
 }
 .row{clear:both;}
 
