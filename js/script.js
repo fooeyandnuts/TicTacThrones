@@ -67,82 +67,99 @@ gameApp.controller('GameController', function($scope, $firebase){
      };
 
      function myTurn(){
-          $scope.game.counter;
-               playerNum;
+          // $scope.game.counter;
+          //      playerNum;
                if((playerNum == 1 && $scope.game.counter %2 == 0)||(playerNum == 2 && $scope.game.counter %2 != 0)) {
                          return true;
                     }
                     else {
                          return false;
                     }
-     };
+     }
 
      $scope.winFunction = function (){
+          // if ($scope.game.board[[0,1,2] || [3,4,5] || [6,7,8] || [0,3,6] || [1,4,7] || [2,5,8] || [0,5,8] || [2,4,6]])==="Stark"){
+          //      console.log("Stark wins");
+          //      $scope.game.won = true;
+          //      }
+          // else ($scope.game.board[[0,1,2] || [3,4,5] || [6,7,8] || [0,3,6] || [1,4,7] || [2,5,8] || [0,5,8] || [2,4,6]])==="Lannister"){
+          //      console.log("Lannister wins");
+          //      $scope.game.won = true;
+          //      }
           if (($scope.game.board[0]==="Stark") && ($scope.game.board[1]==="Stark") && ($scope.game.board[2]=="Stark")){
                console.log("Stark wins");
                $scope.game.won = true;
+               $scope.gameEnd();
                }
           else if (($scope.game.board[3]==="Stark") && ($scope.game.board[4]==="Stark") && ($scope.game.board[5]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[6]==="Stark") && ($scope.game.board[7]==="Stark") && ($scope.game.board[8]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[0]==="Stark") && ($scope.game.board[3]==="Stark") && ($scope.game.board[6]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[1]==="Stark") && ($scope.game.board[4]==="Stark") && ($scope.game.board[7]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[2]==="Stark") && ($scope.game.board[5]==="Stark") && ($scope.game.board[8]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[0]==="Stark") && ($scope.game.board[4]==="Stark") && ($scope.game.board[8]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[2]==="Stark") && ($scope.game.board[4]==="Stark") && ($scope.game.board[6]=="Stark")){
-               console.log("Stark wins");
+               alert("Stark wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[0]==="Lannister") && ($scope.game.board[1]==="Lannister") && ($scope.game.board[2]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[3]==="Lannister") && ($scope.game.board[4]==="Lannister") && ($scope.game.board[5]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[6]==="Lannister") && ($scope.game.board[7]==="Lannister") && ($scope.game.board[8]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[0]==="Lannister") && ($scope.game.board[3]==="Lannister") && ($scope.game.board[6]=="Lannister")){
-               $scope.game.console.log("Lannister wins");
+               alert("Lannister wins");
+               $scope.game.won = true;
           }
           else if (($scope.game.board[1]==="Lannister") && ($scope.game.board[4]==="Lannister") && ($scope.game.board[7]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[2]==="Lannister") && ($scope.game.board[5]==="Lannister") && ($scope.game.board[8]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if (($scope.game.board[0]==="Lannister") && ($scope.game.board[5]==="Lannister") && ($scope.game.board[8]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
           else if(($scope.game.board[2]==="Lannister") && ($scope.game.board[4]==="Lannister") && ($scope.game.board[6]=="Lannister")){
-               console.log("Lannister wins");
+               alert("Lannister wins");
                $scope.game.won = true;
           }
+          
           $scope.game.$save();
+
      };
+
+     function gameEnd () {
+          if ($scope.game.won == true)
+          return;
+     }
      // $scope.gameReset = function(){
      //      if ($scope.game.won == true) {
      //           $scope.game.counter=0;
@@ -154,3 +171,5 @@ gameApp.controller('GameController', function($scope, $firebase){
      //      }
      // };
 });
+
+//winner: [player1: 0, player2: 0]

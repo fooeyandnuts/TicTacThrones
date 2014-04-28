@@ -48,12 +48,12 @@ h2 {
 	border: 2px solid white;
 }
 .lannister {
-	background-image:url(../img/lannister-small.jpg);
+	background-image:url(../img/Lannister-S.jpg);
 	background-size: contain;
 	font-size: 0;
 }
 .stark {
-	background-image:url(../img/stark-small.jpg);
+	background-image:url(../img/Stark-S.jpg);
 	background-size: contain;
 	font-size: 0;
 }
